@@ -15,6 +15,7 @@ const buttonForm = document.querySelector('.pay-now-btn');
 
 
 buttonStep0.addEventListener('click', ()=>{
+    document.title = 'Add on extras | FLEXICAR'
     cartAuto.style.display = 'none';
     buttonStep0.style.display = 'none';
     addExtras.style.display = 'flex';
@@ -23,6 +24,7 @@ buttonStep0.addEventListener('click', ()=>{
 })
 
 buttonStep1.addEventListener('click', ()=>{
+    document.title = 'Insurance | FLEXICAR'
     addExtras.style.display = 'none';
     buttonStep1.style.display = 'none';
     insurance.style.display = 'flex';
@@ -35,6 +37,7 @@ buttonStep1.addEventListener('click', ()=>{
 })
 
 buttonStep2.addEventListener('click', ()=>{
+    document.title = 'Confirming order | FLEXICAR'
     insurance.style.display = 'none';
     buttonStep2.style.display = 'none';
     confirmOrder.style.display = 'flex';
