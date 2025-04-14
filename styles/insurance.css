@@ -1,0 +1,259 @@
+.insurance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 920px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.insurance-title {
+    color: white;
+    text-align: start;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 26px;
+    margin-top: 28px;
+}
+.insurance-cart-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* width: 902px; */
+    gap: 11px;
+}
+
+.insurance-cart-cnt {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    width: 361px;
+    height: 280px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding-top: 18px;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+.insurance-cart input:checked ~ .insurance-cart-cnt {
+    background: linear-gradient(149.67deg, #B68867 6.05%, #BC8473 88.69%);
+}
+.insurance-cart input:checked ~ .insurance-cart-cnt .insurance-rectangle-1 { display: block;} 
+.insurance-cart input:checked ~ .insurance-cart-cnt .insurance-rectangle-2 { display: block;} 
+.insurance-cart input:checked ~ .insurance-cart-cnt .insurance-rectangle-3 { display: block;} 
+.insurance-rectangle-1 {
+    display: none;
+    width: 306px;
+    height: 306px;
+    position: absolute;
+    top: 206px;
+    left: 29.12px;
+    transform: rotate(18deg);
+    opacity: 0.5;
+    border-radius: 29px;
+    background: linear-gradient(168.09deg, rgba(255, 255, 255, 0.3) 8.71%, rgba(255, 255, 255, 0) 79.23%);
+    backdrop-filter: blur(500px);
+    pointer-events: none;
+    z-index: -1;  
+}
+.insurance-rectangle-2 {
+    display: none;
+    position: absolute;
+    width: 306px;
+    height: 306px;
+    top: 121px;
+    left: 127.12px;
+    transform: rotate(18deg);
+    opacity: 0.5;
+    border-radius: 29px;
+    background: linear-gradient(168.09deg, rgba(255, 255, 255, 0.3) 8.71%, rgba(255, 255, 255, 0) 79.23%);
+    backdrop-filter: blur(500px);
+    pointer-events: none;
+    z-index: -1;  
+}
+.insurance-rectangle-3 {
+    display: none;
+    position: absolute;
+    width: 306px; 
+    height: 306px; 
+    top: 30px;
+    left: 224.33px;
+    transform: rotate(18deg);
+    opacity: 0.5;
+    border-radius: 29px;
+    background: linear-gradient(168.09deg, rgba(255, 255, 255, 0.3) 8.71%, rgba(255, 255, 255, 0) 79.23%);
+    pointer-events: none;
+    z-index: -1;
+}
+.insurance-cart-title-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+}
+.insurance-cart-title-2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+
+}
+.insurance-cart-list-title {
+    padding-left: 17px;
+    margin-top: 16px;
+}
+.insurance-cart-list {
+    display: flex;
+    padding-left: 17px;
+    margin-top: 17px;
+}
+.insurance-cart-list img {
+    width: 16px;
+    height: 16px;
+}
+.insurance-cart-list span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    padding-left: 5px;
+    max-width: 305px;  
+}
+.insurance-cart-comments {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 140%;
+    color: rgba(101, 101, 102, 1);
+    padding-left: 17px;
+    width: 329px;
+    margin-top: 18px;
+
+
+}
+
+
+@media (min-width: 1920px) {
+    .insurance-container {
+        width: 920px;
+        height: inherit;
+        position: relative;
+        padding: 0;
+        box-sizing: border-box;
+        padding-top: 11px;
+    }
+    .insurance-container::before{
+        position: absolute;
+        top: -7px;
+        display: block;
+        content: "";
+        width: 920px;
+        height: 2px;
+        background-color: rgba(79, 79, 81, 1);
+    }
+    .insurance-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        padding-left: 8px;
+        margin: 0;
+    }
+    .insurance-cart-container {
+        margin-top: 12px;
+        flex-direction: row;
+        width: 100%;
+        gap: 18px;
+    }
+    .insurance-cart-cnt {
+        padding-top: 30px;
+        width: 294px;
+        height: 334px;
+    }
+    .insurance-cart-title-2 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 100%;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .insurance-cart-list-cnt {
+        display: flex;
+        flex-direction: column;
+        padding-left: 9px;
+        gap: 10px;
+        padding-top: 19px;
+    }
+    .insurance-cart-list {
+        margin: 0;
+    }
+    .insurance-cart-list span {
+        width: 225px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1920px) {
+    .insurance-container {
+        height: 492px;
+    }
+    .insurance-cart-container {
+        flex-direction: row;
+        gap: 17px;
+    } 
+    .insurance-cart-cnt {
+        width: 234.67px;
+        height: 373px;
+    }
+    .insurance-cart-list span {
+        width: 175px;
+    }
+    .insurance-cart-comments {
+        width: 200px;
+        margin-top: 17px;
+    }
+    .insurance-title {
+        margin-bottom: 9px;
+        margin-top: 36px;
+    }
+}
+@media (min-width: 393px) and (max-width: 1920px) {
+
+}
+
+@media (max-width: 1920px) {
+    .insurance-container {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .insurance-container {
+        padding-top: 16px;
+        height: inherit;
+    }
+    .insurance-title {
+        margin-bottom: 9px;
+    }
+    /* .insurance-cart-cnt {
+        height: ;
+    } */
+    .insurance-cart-container {
+        gap: 8px;
+    }
+     .insurance-cart-list-cnt {
+        margin-bottom: 18px;
+     }
+     .insurance-cart-comments {
+        margin-top: 0;
+        margin-bottom: 10px;
+     }
+     .insurance-cart {
+        height: 280px;
+     }
+}
+
+
+
+
+

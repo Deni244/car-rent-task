@@ -1,0 +1,198 @@
+%stepper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.stepper-car-info-container {
+    height: 184px;
+    background-color: rgb(30, 30, 32);
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.stepper-container {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+.stepper-cnt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: rgba(145, 145, 146, 1);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+.checked {
+    margin-bottom: 13px;
+}
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    color: rgba(145, 145, 146, 1);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+
+    .checked {
+        position: relative;
+        z-index: 1;
+        border-radius: 100%;
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &:after {
+        display: block;
+        content: ' ';
+        position: absolute;
+        height: 1px;
+        top: 23px;
+    }
+    &:nth-child(1):after{
+        width: 50%;
+        left: 50%;
+    }
+    &:nth-child(2):after{
+        width: 100%;
+        left: 0;
+    }
+    &:nth-child(3):after{
+        width: 100%;
+        left: 0;
+    }
+    &:nth-child(4):after{
+        width: 50%;
+        left: 0;
+    }
+     p {
+        position: absolute;
+        bottom: 0;
+    }
+}
+.step-succes {
+    .checked {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background-color: rgba(197, 160, 133, 1);
+        img {
+            display: inline;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &:after {
+        background-color: rgba(197, 160, 133, 1);
+    }
+}
+.step-pending {
+    .checked {
+        width: 12px;
+        height: 12px;
+        border: 1px solid white;
+        background-color: rgba(182, 136, 103, 1);
+        img {
+            display: none;
+        }
+    }
+    &::before {
+        display: block;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-color: rgba(182, 136, 103, 0.2);
+        border-radius: 100%;
+        position: absolute;
+        top: 11.5px;
+        left: calc(50% - 12px);
+    }
+    &:after {
+        background-color: rgba(197, 160, 133, 1);
+    }
+}
+.step-future {
+    .checked {
+        width: 12px;
+        height: 12px;
+        background-color: rgba(79, 79, 81, 1);
+        img {
+            display: none;
+        }
+    }
+    &:after {
+        background-color: rgba(79, 79, 81, 1);
+    }
+}
+.car-info-container {
+    height: 96px;
+    display: flex;
+    box-sizing: border-box;
+}
+.stepper-car-img {
+    width: 74px;
+    height: 48px;
+    margin-top: 33px;
+    margin-left: 17px;
+    transform: scaleX(1.06);
+}
+.stepper-car-info-cnt {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    margin-top: 26px;
+    margin-left: 14px;
+}
+.stepper-car-info:nth-child(1) {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.stepper-car-info:nth-child(2) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: rgba(145, 145, 146, 1);
+    
+}
+.stepper-car-info:nth-child(3) {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+@media (max-width: 1920px) {
+    .stepper-car-info-container {
+        display: none;
+        padding-top: 0;
+        height: inherit;
+        background-color: inherit;
+        margin-top: 9px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+    .car-info-container {
+        margin-top: 10px;
+        padding-left: 20px;
+        margin-bottom: 12px;
+    }
+}
+@media (min-width: 1920px) {
+    .stepper-car-info-container {
+        display: none;
+    }
+}

@@ -1,0 +1,70 @@
+.total-catr-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 361px;
+    height: 193px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.04);
+    margin-top: 21px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 21px;
+}
+.total-cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.total-cart-list-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.total-cart-list-item span:first-child {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+.total-cart-list-item span:last-child {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: right;
+}
+.total-cart-sum-cnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.total-cart-sum-cnt::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+   
+    background-color: rgba(79, 79, 81, 1);
+    position: absolute;
+    top: -10px;
+}
+.total-cart-sum-cnt span {
+    font-weight: 500;
+    font-size: 18px;
+}
+@media (min-width: 1920px) {
+    .total-catr-cnt {
+        width: 448px;
+
+    }
+}
+@media (min-width: 768px) and (max-width: 1920px) {
+    .total-catr-cnt {
+        padding-left: 27px;
+        padding-top: 10px;
+        padding-bottom: 28px;
+    }
+}

@@ -1,0 +1,148 @@
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    position: relative;
+    color: white;
+    background-image: url('../assets/hyundai-motor-group-1IzLd_SAB38-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 142%;
+    height: 466px;
+    /* background-position: 4% 65%; */
+    background-position-x: -23px;
+    background-position-y: -624px;
+    overflow: hidden;
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
+    margin-top: 80px;
+
+}
+
+.contact-us-group {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    width: 142px;
+    height: 56px;
+    margin-top: 111px;
+}
+.contact-us-group :nth-child(1) {
+    z-index: 3;
+
+}
+.contact-us-group :nth-child(2) {
+    z-index: 2;
+    left: 42px;
+}
+.contact-us-group :nth-child(3) {
+    z-index: 1;
+    left: 85px;
+}
+.contacts-container {
+    position: absolute;
+}
+.active-user {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 43px;
+    left: 43px;
+    border-width: 1px;
+    border-radius: 100%;
+    z-index: 2;
+    background-color: rgba(39, 193, 55, 1);
+    border: 1px solid white;
+
+}
+.contacts-container img{
+    width: 56px;
+    height: 56px;
+    border: 1.5px solid white;
+    background-color: rgba(209, 186, 170, 1);
+    border-radius: 100%;
+    border-width: 1.5px;
+}
+.contact-us-qustion {
+    width: 297px;
+    margin-top: 33px;
+    /* margin-left: 97px; */
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+.contact-us-text {
+    width: 297px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 105%;
+    letter-spacing: 0.06px;
+}
+.contact-us-btn {
+    font-family: "Inter", sans-serif;
+    color: white;
+    width: 140px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: rgba(182, 136, 103, 1);
+    margin-top: 34px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+@media (min-width: 1920px) {
+    .contact-us-container {
+        margin-top: 122px;
+    }
+    .contact-us-cnt {
+        max-width: 1458px;
+        width: 100%;
+        height: 312px;
+        padding-top: 38px;
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+    .contact-us-group {
+        margin-top: 0;
+    }
+    .contact-us-text {
+        width: 435px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1920px) {
+    .contact-us-container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 31px;
+        background-size: 169%;
+        background-position-x: -14px;
+        background-position-y: -180px;
+    }
+    .contact-us-text {
+        width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us-cnt {
+      box-sizing: border-box;
+      padding-bottom: 10px;
+
+    }
+    .contact-us-group {
+        margin-top: 0;
+        margin-left: 78px;
+    }
+    .contact-us-btn {
+        margin-left: 78px;
+    }
+    .contact-us-container {
+        background-size: 324%;
+        background-position-x: -280px;
+        background-position-y: -168px;
+    }
+}

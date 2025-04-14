@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    background-color: white;
+}
+input {
+    all: unset;
+  }
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    max-width: 393px;
+    width: 100%;
+    background-color: rgba(18, 18, 20, 1);
+    margin-left: 70px;
+    margin-top: 13px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 53px;
+    background-color: rgba(30, 30, 32, 1);
+    color: white;
+
+}
+.logo-cnt {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-left: 41px;
+    margin-right: 85px;
+}
+.logo img {
+    width: 126px;
+    height: 15px;
+}
+.header-navigationt-cnt {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.header-navigationt-cnt a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    
+}
+.lang-contacts-cnt {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    margin-right: 60px;
+}
+.menu-btn {
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+.finaly-btn-cnt {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.btn-booking {
+    width: 361px;
+    height: 56px;
+    background-color: rgba(182, 136, 103, 1);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.btn-booking:hover {
+    background: linear-gradient(
+    to right,
+    rgba(142, 98, 70, 1),
+    rgba(100, 60, 40, 1)  
+  );
+}
+.hidden {
+    display: none;
+}
+
+.pay-cash-btn {
+    width: 361px;
+    height: 56px;
+    background-color: rgba(182, 136, 103, 1);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: white;
+    border-radius: 8px;
+    margin-left: 16px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+.pay-now-btn {
+    width: 361px;
+    height: 56px;
+    background-color: rgba(182, 136, 103, 1);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: white;
+    border-radius: 8px;
+    margin-left: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+.car-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1920px) {
+    body {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    header {
+        height: 72px;
+    }
+    .menu-btn {
+        display: none;
+    }
+    .form-auto {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-top: 128px;
+    }
+    .btn-booking {
+        display: none;
+    }
+    .car-content {
+        max-width: 968px;
+        background-color: rgba(30, 30, 32, 1);
+        border-radius: 16px;
+        padding: 48px 0 45px 21px;
+        /* padding-top: 48px;
+        padding-left: 21px; */
+        box-sizing: border-box;
+        gap: 40px;
+        width: 100%;
+        height: 1279px;
+        /* padding-bottom: 45px; */
+    }
+    .finaly-btn-cnt {
+        flex-direction: row;
+        gap: 27px;
+    }
+    .pay-cash-btn {
+        margin: 0;
+        width: 212px;
+    }
+    .pay-now-btn {
+        margin: 0;
+        width: 212px;
+    }
+}
+@media (max-width: 1920px) {
+    .step-1 {
+        display: none;
+    }
+    .step-2 {
+        display: none;
+    }
+    .lang-contacts-cnt {
+        display: none;
+    }
+    .header-navigationt-cnt {
+        display: none;
+    }
+}
+
+@media (max-width: 1920px) and (min-width: 768px) {
+    body {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    header {
+        height: 76px;
+    }
+    .form-auto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .car-content {
+        
+        align-items: center;
+    }
+    .btn-booking {
+        width: 196px;
+        margin-left: 0;
+    }
+    .finaly-btn-cnt {
+        /* display: none; */
+        justify-content: center;
+        flex-direction: row;
+    }
+    .pay-cash-btn {
+        margin: 0;
+        width: 230px;
+    }
+    .pay-now-btn {
+        width: 230px;
+        margin-top: 0;
+    }
+    .step-1 {
+        margin: 0;
+        width: 208px;
+    }
+    .step-2 {
+        margin: 0;
+        width: 208px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .pay-cash-btn {
+        margin-left: 0;
+        width: 361px;
+    }
+    .pay-now-btn {
+        width: 361px;
+        margin-left: 0;
+    }
+    .step-1 {
+        margin-top: 45px;
+    }
+}

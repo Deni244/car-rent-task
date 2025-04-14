@@ -1,0 +1,196 @@
+.stepper-car-info-container {
+  height: 184px;
+  background-color: rgb(30, 30, 32);
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.stepper-container {
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+
+.stepper-cnt {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: rgb(145, 145, 146);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.checked {
+  margin-bottom: 13px;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+  color: rgb(145, 145, 146);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+.stepper .checked {
+  position: relative;
+  z-index: 1;
+  border-radius: 100%;
+}
+.stepper .checked img {
+  width: 16px;
+  height: 16px;
+}
+.stepper:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  height: 1px;
+  top: 23px;
+}
+.stepper:nth-child(1):after {
+  width: 50%;
+  left: 50%;
+}
+.stepper:nth-child(2):after {
+  width: 100%;
+  left: 0;
+}
+.stepper:nth-child(3):after {
+  width: 100%;
+  left: 0;
+}
+.stepper:nth-child(4):after {
+  width: 50%;
+  left: 0;
+}
+.stepper p {
+  position: absolute;
+  bottom: 0;
+}
+
+.step-succes .checked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(197, 160, 133);
+}
+.step-succes .checked img {
+  display: inline;
+  width: 16px;
+  height: 16px;
+}
+.step-succes:after {
+  background-color: rgb(197, 160, 133);
+}
+
+.step-pending .checked {
+  width: 12px;
+  height: 12px;
+  border: 1px solid white;
+  background-color: rgb(182, 136, 103);
+}
+.step-pending .checked img {
+  display: none;
+}
+.step-pending::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: rgba(182, 136, 103, 0.2);
+  border-radius: 100%;
+  position: absolute;
+  top: 11.5px;
+  left: calc(50% - 12px);
+}
+.step-pending:after {
+  background-color: rgb(197, 160, 133);
+}
+
+.step-future .checked {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(79, 79, 81);
+}
+.step-future .checked img {
+  display: none;
+}
+.step-future:after {
+  background-color: rgb(79, 79, 81);
+}
+
+.car-info-container {
+  height: 96px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.stepper-car-img {
+  width: 74px;
+  height: 48px;
+  margin-top: 33px;
+  margin-left: 17px;
+  transform: scaleX(1.06);
+}
+
+.stepper-car-info-cnt {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  margin-top: 26px;
+  margin-left: 14px;
+}
+
+.stepper-car-info:nth-child(1) {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.stepper-car-info:nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: rgb(145, 145, 146);
+}
+
+.stepper-car-info:nth-child(3) {
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 1920px) {
+  .stepper-car-info-container {
+    display: none;
+    padding-top: 0;
+    height: inherit;
+    background-color: inherit;
+    margin-top: 9px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1920px) {
+  .car-info-container {
+    margin-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: 1920px) {
+  .stepper-car-info-container {
+    display: none;
+  }
+}/*# sourceMappingURL=stepper.css.map */
