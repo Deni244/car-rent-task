@@ -10,9 +10,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-html {
-    background-color: white;
-}
+
 input {
     all: unset;
   }
@@ -25,8 +23,7 @@ body {
     max-width: 393px;
     width: 100%;
     background-color: rgba(18, 18, 20, 1);
-    margin-left: 70px;
-    margin-top: 13px;
+    margin: 0 auto;
 }
 header {
     display: flex;
