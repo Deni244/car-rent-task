@@ -28,21 +28,26 @@
     height: 56px;
     margin-top: 111px;
 }
+
 .contact-us-group :nth-child(1) {
     z-index: 3;
 
 }
+
 .contact-us-group :nth-child(2) {
     z-index: 2;
     left: 42px;
 }
+
 .contact-us-group :nth-child(3) {
     z-index: 1;
     left: 85px;
 }
+
 .contacts-container {
     position: absolute;
 }
+
 .active-user {
     position: absolute;
     width: 10px;
@@ -56,7 +61,8 @@
     border: 1px solid white;
 
 }
-.contacts-container img{
+
+.contacts-container img {
     width: 56px;
     height: 56px;
     border: 1.5px solid white;
@@ -64,6 +70,7 @@
     border-radius: 100%;
     border-width: 1.5px;
 }
+
 .contact-us-qustion {
     width: 297px;
     margin-top: 33px;
@@ -72,6 +79,7 @@
     font-size: 20px;
     letter-spacing: 0.2px;
 }
+
 .contact-us-text {
     width: 297px;
     margin-top: 10px;
@@ -80,6 +88,7 @@
     line-height: 105%;
     letter-spacing: 0.06px;
 }
+
 .contact-us-btn {
     font-family: "Inter", sans-serif;
     color: white;
@@ -98,6 +107,7 @@
     .contact-us-container {
         margin-top: 122px;
     }
+
     .contact-us-cnt {
         max-width: 1458px;
         width: 100%;
@@ -106,14 +116,17 @@
         padding-left: 32px;
         box-sizing: border-box;
     }
+
     .contact-us-group {
         margin-top: 0;
     }
+
     .contact-us-text {
         width: 435px;
     }
 }
-@media (min-width: 768px) and (max-width: 1920px) {
+
+@media (min-width: 769px) and (max-width: 1920px) {
     .contact-us-container {
         justify-content: flex-start;
         align-items: flex-start;
@@ -122,6 +135,7 @@
         background-position-x: -14px;
         background-position-y: -180px;
     }
+
     .contact-us-text {
         width: 450px;
     }
@@ -129,17 +143,20 @@
 
 @media (max-width: 768px) {
     .contact-us-cnt {
-      box-sizing: border-box;
-      padding-bottom: 10px;
+        box-sizing: border-box;
+        padding-bottom: 10px;
 
     }
+
     .contact-us-group {
         margin-top: 0;
         margin-left: 78px;
     }
+
     .contact-us-btn {
         margin-left: 78px;
     }
+
     .contact-us-container {
         background-size: 324%;
         background-position-x: -280px;
